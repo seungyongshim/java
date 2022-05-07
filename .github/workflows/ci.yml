@@ -24,7 +24,7 @@ jobs:
         distribution: 'adopt'
         architecture: x64
     - name: Run the Maven verify phase
-      run: mvn -X --batch-mode --update-snapshots verify
+      run: mvn --batch-mode --update-snapshots verify
     - name: ReportGenerator
       uses: danielpalme/ReportGenerator-GitHub-Action@5.1.0
       with:
