@@ -28,7 +28,7 @@ jobs:
     - name: ReportGenerator
       uses: danielpalme/ReportGenerator-GitHub-Action@5.1.0
       with:
-        reports: '**/coverage.cobertura.xml'
+        reports: '**/jacoco.exec'
         reporttypes: 'Html;Badges'
         targetdir: 'docs' # REQUIRED # The directory where the generated report should be saved.
         historydir: 'docs/history'
