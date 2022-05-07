@@ -28,7 +28,7 @@ jobs:
     - name: ReportGenerator
       uses: danielpalme/ReportGenerator-GitHub-Action@5.1.6
       with:
-        reports: 'target/jacoco.exec'
+        reports: 'target/site/jacoco/jacoco.xml'
         reporttypes: 'Html;Badges'
         targetdir: 'docs' # REQUIRED # The directory where the generated report should be saved.
         historydir: 'docs/history'
