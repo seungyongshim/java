@@ -14,7 +14,6 @@ public class MainTest
         var ret = sut.add().apply(1).apply(2);
 
         // asserts
-
-        Assertions.assertEquals(3, ret );
+        Assertions.assertEquals(3, ret);
     }
 }
