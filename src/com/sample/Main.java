@@ -8,5 +8,8 @@ public class Main {
         System.out.println("Hello world");
     }
 
-    Function<Integer, Function<Integer, Integer>> Add = x -> y -> x + y;
+    Function<Integer, Function<Integer, Integer>> add()
+    {
+        return x -> y -> x + y;
+    }
 }
