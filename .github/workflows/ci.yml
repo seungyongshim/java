@@ -26,13 +26,13 @@ jobs:
     - name: Run the Maven verify phase
       run: mvn --batch-mode --update-snapshots verify
     - name: ReportGenerator
-      uses: danielpalme/ReportGenerator-GitHub-Action@5.1.0
+      uses: danielpalme/ReportGenerator-GitHub-Action@5.1.6
       with:
-        reports: '**/jacoco.exec'
+        reports: 'target/jacoco.exec'
         reporttypes: 'Html;Badges'
         targetdir: 'docs' # REQUIRED # The directory where the generated report should be saved.
         historydir: 'docs/history'
-        sourcedirs: 'src' 
+        sourcedirs: '' 
     - name: Push Report
       uses: EndBug/add-and-commit@v4
       with:
