@@ -46,4 +46,5 @@ jobs:
       if: ${{ github.ref == 'refs/heads/main' && always() }}
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        files: src/**/Report.xml
+        files: target/surefire-reports/*.xml
+        fail-on-error: true
